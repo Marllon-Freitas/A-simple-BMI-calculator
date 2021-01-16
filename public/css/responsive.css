@@ -1,0 +1,89 @@
+@media (max-width: 1100px){
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main.borda{
+        margin: auto;
+        width: 95%;
+        margin-top: 160px;
+
+    }
+}
+
+@media(max-width: 600px){
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+  
+    header h1 {
+        font-size: 15px;
+    }
+    header p {
+        font-size: 12px;
+    }
+    main {
+        height: 100%;
+        margin-bottom: 90px;
+        margin-top: 40px;
+    }
+
+    .borda {
+        margin: auto;
+        width: 95%;
+        margin-top: 160px;
+    }
+}
+
+@media(min-height: 600px){
+    body{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    main {
+        height: 100%;
+    }
+    .borda{
+        width: 80%;
+        position: relative;
+        margin: auto;
+        margin-top: 160px;
+        overflow-x: hidden;
+    }
+}
+
+@media(min-height: 1024px){
+    body{
+        height: 100vh;
+    }
+
+    main{
+        padding-top: 140px;
+        padding-left: 30px;
+        width: 80%;
+        height: 70%;
+        margin: auto;
+        font-size: 30px;
+    }
+
+
+    button {
+        height: 60px;
+        width: 250px;
+        background-color:blueviolet;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    
+    input {
+        font-size: 30px;
+    }
+}

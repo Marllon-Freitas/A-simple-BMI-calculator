@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/responsive.css">
+    <link rel="shortcut icon" href="../../public/images/favicon.png" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+<body> 
+    <main>
+        <div class="borda">
+            <header>
+                <h1>Calcule seu IMC</h1>
+            </header>
+            <form class="form" action="" method="POST">
+                <label for="Peso">Peso(kg):</label> <input type="text" class="peso">
+                <label for="Altura">Altura(m):</label> <input type="text" class="altura">
+                <button type="submit"><span class="envio">Enviar</span></button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </main>
+    <script src="../../public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/*declaração das variaveis*/
+/*declaration of variables*/
+:root {
+    --best-color: aliceblue;
+    --blue: #2b00b9;
+}
+
+/*Configurações gerais*/
+/*general settings*/
+html {
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(0, 4, 125), rgb(92, 0, 125));    
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    height: 90%;
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+    /*Configurações da area principal de interação*/
+    /*Main interaction area settings*/
+    .borda {
+        margin-top: 160px;
+        padding: 25px;
+        background-color: var(--best-color);
+        border: 1px solid var(--best-color);
+        border-radius: 29px;
+    }
+
+    form.form {
+        width: 100%;
+        align-content: center;
+        display: block;
+        position: relative;
+    } 
+
+    header {
+        width: 100%;
+    }
+
+    header  h1 {
+        color: var(--text-color);
+        font-size: 30px;
+    }
+
+    /*personalização do campo de envio*/
+    /*customization of the send field*/
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        outline: none;
+        display: block;
+        font-family: 'Poppins';
+        background-color: var(--best-color);
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 1px solid var(--blue);
+    }
+        input:focus {
+            outline: none;
+            border-bottom: 3px solid var(--blue);
+        }
+        input:hover {
+            transition-duration: 0.3s;
+            border-bottom: 3px solid var(--blue);
+        }
+
+    /*personalização do botão de enviar*/
+    /*customization of the send button*/
+    button {
+        height: 30px;
+        width: 150px;
+        outline: none;
+        background-color:blueviolet;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        font-family: 'Poppins';
+        border-radius: 15px;
+        border-color: whitesmoke;
+        cursor: pointer;
+    }
+        button span.envio {
+            color: var(--best-color);
+        }
+
+        button:hover {
+            transition: ease-in-out 0.5s;
+            background-color:var(--blue);
+            color: var(--best-color);
+        }
+
+        button:active {
+            transition: ease-in-out 0.3s;
+            transition: ease-out 1s;
+            background-color: #480072;
+        }
+        button:focus {
+            border-color: var(--blue);
+        }
+    
+    /*resposta que é enviada pelo código javascript*/
+    /*response that is sent by the javascript code*/
+    .paragrafo-resultado, .invalido {
+        border-radius: 5px;
+        padding-left: 5px;
+        background-color:aqua;
+    }
+
+    .invalido {
+        background-color:rgb(255, 150, 150) ;
+    }
